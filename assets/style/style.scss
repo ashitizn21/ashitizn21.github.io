@@ -12,6 +12,75 @@ html{
 }
 // TODO: navBar style
 
+.navBar {
+    background: #45A29E;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navBar .menu li a{
+    color: #fff;
+
+}
+.navBar .maxwidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navBar .menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+
+
+// common for all
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+
 
 // TODO: home section styling 
 
