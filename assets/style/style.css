@@ -7,61 +7,22 @@
   text-decoration: none;
 }
 
-html {
-  scroll-behavior: smooth;
+.maxWidth {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
 
 .navBar {
-  background: #45A29E;
-  width: 100%;
-  padding: 15px 0;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
-
-.navBar .menu li a {
-  color: #fff;
-}
-
-.navBar .maxwidth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.navBar .menu li {
-  display: inline-block;
-  list-style: none;
-}
-
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
-
-.navbar {
   position: fixed;
   width: 100%;
-  z-index: 999;
   padding: 30px 0;
   font-family: 'Ubuntu', sans-serif;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.navbar .max-width {
+.navBar .maxWidth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,22 +34,152 @@ html {
           justify-content: space-between;
 }
 
-.navbar .menu li {
-  list-style: none;
+.navBar .menu li {
   display: inline-block;
+  list-style: none;
 }
 
-.navbar .menu li a {
+.navBar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navBar.sticky {
+  padding: 15px 0;
+  background: #45A29E;
+}
+
+.navBar .logo a span {
+  color: #45A29E;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navBar.sticky .logo a span {
+  color: #fff;
+}
+
+.navBar .menu li a {
   display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-.navbar .menu li a:hover {
-  color: crimson;
+.navBar .menu li a:hover {
+  color: #45A29E;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../images/5-tips-for-students-to-improve-coding-skills-during-college.jpg) no-repeat center;
+  color: #fff;
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .maxWidth {
+  margin: auto 0 auto 50px;
+}
+
+.home .homeContent .nameTxt_1 {
+  font-size: 27px;
+}
+
+.home .homeContent .nameTxt_2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .homeContent .nameTxt_3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .homeContent .nameTxt_3 span {
+  color: #12e1c5;
+}
+
+.menu-btn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 690px) {
+  .maxWidth {
+    padding: 0 23px;
+  }
+  .home .homeContent .nameTxt_2 {
+    font-size: 56px;
+  }
+  .home .homeContent .nameTxt_3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 925px) {
+  .maxWidth {
+    padding: 0 50px;
+  }
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navBar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #111;
+    text-align: center;
+    padding-top: 70px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .navBar .menu.active {
+    left: 0;
+  }
+  .navBar .menu li {
+    display: block;
+  }
+  .navBar .menu li a {
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+  }
+  .home .homeContent .nameTxt_2 {
+    font-size: 65px;
+  }
+  .home .homeContent .nameTxt_3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .maxWidth {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home .maxWidth {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
