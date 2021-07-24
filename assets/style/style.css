@@ -433,6 +433,264 @@ body {
   font-size: 25px;
 }
 
+#skills {
+  background-color: #12172b;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 80px;
+}
+
+.skillArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20%;
+}
+
+.skill {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.skillTitle {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skillBar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  height: 40px;
+  z-index: 1;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.skillFill {
+  background: blue;
+  height: 40px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+.skillPercent {
+  font-size: 30px;
+  color: #fff;
+}
+
+.html {
+  -webkit-animation: html 2s;
+          animation: html 2s;
+  width: 70%;
+}
+
+.css {
+  -webkit-animation: css 2s;
+          animation: css 2s;
+  width: 50%;
+}
+
+.js {
+  -webkit-animation: js 2s;
+          animation: js 2s;
+  width: 20%;
+}
+
+.python {
+  -webkit-animation: python 2s;
+          animation: python 2s;
+  width: 55%;
+}
+
+.cpp {
+  -webkit-animation: cpp 2s;
+          animation: cpp 2s;
+  width: 60%;
+}
+
+.java {
+  -webkit-animation: cpp 2s;
+          animation: cpp 2s;
+  width: 40%;
+}
+
+.mysql {
+  -webkit-animation: cpp 2s;
+          animation: cpp 2s;
+  width: 40%;
+}
+
+.php {
+  -webkit-animation: cpp 2s;
+          animation: cpp 2s;
+  width: 30%;
+}
+
+@-webkit-keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes html {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes css {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes python {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+@keyframes python {
+  from {
+    width: 0;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+@-webkit-keyframes cpp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes cpp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes java {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes java {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes mysql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes mysql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes php {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes php {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
 @media (max-width: 690px) {
   .maxWidth {
     padding: 0 23px;
@@ -478,6 +736,12 @@ body {
   .social {
     height: 320px;
     margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .skillsArea {
+    padding: 0 5%;
   }
 }
 

@@ -416,6 +416,174 @@ body{
 
 // TODO: skills section styling 
 
+#skills {
+    background-color: #12172b;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 80px;
+}
+
+.skillArea {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.skill {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.skillTitle {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skillBar{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    height: 40px;
+    z-index: 1;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.skillFill {
+    background: blue;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+
+}
+
+
+.skillPercent {
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .html {
+    animation: html 2s;
+    width: 70%;
+  }
+  
+  .css {
+    animation: css 2s;
+    width: 50%;
+  }
+  
+  .js {
+    animation: js 2s;
+    width: 20%;
+  }
+
+  .python {
+      animation: python 2s;
+      width: 55%;
+  }
+
+  .cpp {
+      animation: cpp 2s;
+      width: 60%;
+  }
+  
+.java {
+    animation: cpp 2s;
+    width: 40%;
+}
+
+.mysql {
+    animation: cpp 2s;
+    width: 40%;
+}
+
+.php {
+    animation: cpp 2s;
+    width: 30%;
+}
+  @keyframes html {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  
+  @keyframes css {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  
+  @keyframes js {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20%;
+    }
+  }
+
+  @keyframes python {
+      from {
+          width: 0;
+      }
+      to {
+          width: 55%;
+      }
+  }
+  
+  @keyframes cpp {
+      from{
+          width: 0;
+      }
+      to {
+          width: 60%;
+      }
+  }
+
+  @keyframes java{
+      from{
+          width: 0;
+      }
+      to{
+          width: 40%;
+      }
+  }
+
+  @keyframes mysql {
+      from{
+          width: 0;
+      }
+      to{
+          width: 40%;
+      }
+  }
+
+  @keyframes php {
+      from{
+          width: 0;
+      }
+      to {
+          width: 30%;
+      }
+  }
 
 
 // TODO: contact section styling 
@@ -470,6 +638,12 @@ body{
         margin-bottom: 30px;
     }
  }
+
+ @media only screen and (max-width: 750px) {
+    .skillsArea {
+      padding: 0 5%;
+    }
+  }
 
  @media(max-width: 800px) {
 
