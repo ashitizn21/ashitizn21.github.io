@@ -7,6 +7,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    width: 100%;
+}
 
 .maxWidth {
     max-width: 1300px;
@@ -78,7 +81,7 @@
     color: #fff;
     height: 100vh;
     min-height: 500px;
-    // width: 100%;
+    width: 100%;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
@@ -118,37 +121,90 @@
 
 // TODO: about section styling 
 
+
 .aboutSection {
     background-color: #ddd;
+    
     width: 100%;
     min-height: 100vh;
 }
   
-.abtContainer {
-    width: 80%;
-    margin: auto;
-    display: block;
-    padding-top: 100px;
+.aboutSection .title {
+    text-align: center;
+
+    h1 {
+        text-decoration: underline solid rgb(63, 16, 110) 5px;
+
+    }
 }
 
+.abtContainer {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+}
+.button{
+    align-items: center;
+    margin-left: 25%;
+    margin-top: -70px;
+}
 .abtContent {
-    float: left;
-    width: 50%;
-    // left: 0;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
 .imageSection {
-    float: right;
-    width: 40%;
-    right: 5px;
+   width: 40%;
+   overflow: hidden;
+}
+.imageSection img{
+    
+    width: 300px;
+    align-items: center;
+    
+ }
+ 
+
+.abtMeContnet p {
+        padding: 100px;
+        padding-top: 10px;
+    }
+.abtMeContnet h3 {
+    text-align: center;
+}
+.new{
+    width:60%;
 }
 
+// TODO:
+.abtMeContnet{
+
+    .button {
+        text-decoration: none;
+        background-color: #3d3d3d;
+        font-size: 22px;
+        padding: 10px 10px;
+        margin-left: 100px;
+        width: 132px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        
+        a {
+            color: #fff;
+
+        }
+    }
+}
 .social {
- display: grid;
-  height: 100%;
+  display: grid;
   width: 100%;
+  height: 200px;
 //   place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+//   background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  margin-left: 100px;
 }
 .wrapper .button{
     display: inline-block;
@@ -180,22 +236,22 @@
   .wrapper a{
       color: black;
   }
-  .wrapper .button:nth-child(1):hover .icon{
+  #fb :hover .icon{
     background: #4267B2;
   }
-  .wrapper .button:nth-child(2):hover .icon{
+  #tg:hover .icon{
     background: #1DA1F2;
   }
-  .wrapper .button:nth-child(3):hover .icon{
+  #insta:hover .icon{
     background: #E1306C;
   }
   
-  .wrapper .button:nth-child(4):hover .icon{
-    background: #111;
+ #git:hover .icon{
+    background: #333;
   }
 
-  .wrapper .button:nth-child(5):hover .icon{
-      background: #fff;
+#ld:hover .icon{
+      background: #0e76a8;
   }
 
 
@@ -219,19 +275,19 @@
     transition: all 0.3s ease-out;
   }
 
-  .wrapper .button:nth-child(1) span{
+  #fb span{
     color: #4267B2;
   }
-  .wrapper .button:nth-child(2) span{
+#tg span{
     color: #1DA1F2;
   }
-  .wrapper .button:nth-child(3) span{
+ #insta span{
     color: #E1306C;
   }
-  .wrapper .button:nth-child(4) span{
-    color: #fff;
+#git span{
+    color: rgb(5, 5, 5);
   }
- .wrapper .button:nth-child(5) span{
+#ld span{
      color: #2867B2;
  }
 
@@ -256,12 +312,83 @@
      .maxWidth{
          padding: 0 23px;
      }
+     .home{
+         width: 100%;
+         margin: 0;
+         padding: 0;
+     }
     .home .homeContent .nameTxt_2{
         font-size: 56px;
         
     }
     .home .homeContent .nameTxt_3{
         font-size: 25px;
+    }
+    .new {
+        margin-top: 25px;
+        width: 80%;
+    }
+    .imageSection{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+    }
+
+    .social {
+        height: 320px;
+    }
+ }
+
+ @media(max-width: 800px) {
+
+    .imageSection{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .imageSection img{
+        width: 60%;
+    }
+
+    .new {
+        margin-top: 25px;
+        width: 80%;
+    }
+    .abtMeContnet{
+
+        .button {
+            text-decoration: none;
+            background-color: #3d3d3d;
+            font-size: 24px;
+            padding: 10px 10px;
+            margin-left: 0;
+            width: 132px;
+            margin-bottom: 20px;
+            
+            a {
+                color: #fff;
+
+            }
+                }
+    }
+    .abtMeContnet p{
+        text-align: justify;
+        padding: 0;
+        
+        // margin: 0;
+    }
+    .button{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .social{
+        margin-left: 0;
     }
  }
 

@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+body {
+  width: 100%;
+}
+
 .maxWidth {
   max-width: 1300px;
   padding: 0 80px;
@@ -82,6 +86,7 @@
   color: #fff;
   height: 100vh;
   min-height: 500px;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
@@ -123,30 +128,86 @@
   min-height: 100vh;
 }
 
+.aboutSection .title {
+  text-align: center;
+}
+
+.aboutSection .title h1 {
+  -webkit-text-decoration: underline solid #3f106e 5px;
+          text-decoration: underline solid #3f106e 5px;
+}
+
 .abtContainer {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: block;
-  padding-top: 100px;
+  padding-top: 20px;
+}
+
+.button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25%;
+  margin-top: -70px;
 }
 
 .abtContent {
-  float: left;
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .imageSection {
-  float: right;
   width: 40%;
-  right: 5px;
+  overflow: hidden;
+}
+
+.imageSection img {
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.abtMeContnet p {
+  padding: 100px;
+  padding-top: 10px;
+}
+
+.abtMeContnet h3 {
+  text-align: center;
+}
+
+.new {
+  width: 60%;
+}
+
+.abtMeContnet .button {
+  text-decoration: none;
+  background-color: #3d3d3d;
+  font-size: 22px;
+  padding: 10px 10px;
+  margin-left: 100px;
+  width: 132px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.abtMeContnet .button a {
+  color: #fff;
 }
 
 .social {
   display: -ms-grid;
   display: grid;
-  height: 100%;
   width: 100%;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  height: 200px;
+  margin-left: 100px;
 }
 
 .wrapper .button {
@@ -185,24 +246,24 @@
   color: black;
 }
 
-.wrapper .button:nth-child(1):hover .icon {
+#fb :hover .icon {
   background: #4267B2;
 }
 
-.wrapper .button:nth-child(2):hover .icon {
+#tg:hover .icon {
   background: #1DA1F2;
 }
 
-.wrapper .button:nth-child(3):hover .icon {
+#insta:hover .icon {
   background: #E1306C;
 }
 
-.wrapper .button:nth-child(4):hover .icon {
-  background: #111;
+#git:hover .icon {
+  background: #333;
 }
 
-.wrapper .button:nth-child(5):hover .icon {
-  background: #fff;
+#ld:hover .icon {
+  background: #0e76a8;
 }
 
 .wrapper .button:nth-child(4):hover .icon {
@@ -229,23 +290,23 @@
   transition: all 0.3s ease-out;
 }
 
-.wrapper .button:nth-child(1) span {
+#fb span {
   color: #4267B2;
 }
 
-.wrapper .button:nth-child(2) span {
+#tg span {
   color: #1DA1F2;
 }
 
-.wrapper .button:nth-child(3) span {
+#insta span {
   color: #E1306C;
 }
 
-.wrapper .button:nth-child(4) span {
-  color: #fff;
+#git span {
+  color: #050505;
 }
 
-.wrapper .button:nth-child(5) span {
+#ld span {
   color: #2867B2;
 }
 
@@ -253,11 +314,86 @@
   .maxWidth {
     padding: 0 23px;
   }
+  .home {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .home .homeContent .nameTxt_2 {
     font-size: 56px;
   }
   .home .homeContent .nameTxt_3 {
     font-size: 25px;
+  }
+  .new {
+    margin-top: 25px;
+    width: 80%;
+  }
+  .imageSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: none;
+  }
+  .social {
+    height: 320px;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .imageSection img {
+    width: 60%;
+  }
+  .new {
+    margin-top: 25px;
+    width: 80%;
+  }
+  .abtMeContnet .button {
+    text-decoration: none;
+    background-color: #3d3d3d;
+    font-size: 24px;
+    padding: 10px 10px;
+    margin-left: 0;
+    width: 132px;
+    margin-bottom: 20px;
+  }
+  .abtMeContnet .button a {
+    color: #fff;
+  }
+  .abtMeContnet p {
+    text-align: justify;
+    padding: 0;
+  }
+  .button {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .social {
+    margin-left: 0;
   }
 }
 
