@@ -81,17 +81,17 @@ html {
 // TODO: home section styling 
 
 .home {
-    display: flex;
+    background-attachment: fixed;
     background: url(../images/5-tips-for-students-to-improve-coding-skills-during-college.jpg) no-repeat center ;
-    color: #fff;
     height: 100vh;
     min-height: 500px;
     width: 100%;
+    display: flex;
+    color: #fff;
     background-size: cover;
-    background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-}
 
+}
 .home .maxWidth {
     margin: auto 20px auto 50px;
 }
@@ -292,9 +292,7 @@ html {
 
 
   
-//   .wrapper .button:nth-child(4):hover .icon{
-//     background: #ff0000;
-//   }
+
   .wrapper .button .icon i{
     font-size: 25px;
     line-height: 60px;

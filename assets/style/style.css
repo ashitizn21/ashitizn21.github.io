@@ -84,16 +84,16 @@ html {
 }
 
 .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-attachment: fixed;
   background: url(../images/5-tips-for-students-to-improve-coding-skills-during-college.jpg) no-repeat center;
-  color: #fff;
   height: 100vh;
   min-height: 500px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
   background-size: cover;
-  background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
 }
 
