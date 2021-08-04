@@ -9,72 +9,92 @@
 }
 body{
     width: 100%;
-       // color: #fff;
+       
 }
 
 html {
     scroll-behavior: smooth;
 }
-.navBar .maxWidth {
+.newNavBar .maxWidth{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
 
-// TODO: navBar style
 
-.navBar {
-    // background: #45A29E;
-    position: fixed;
+
+.newNavBar {
     width: 100%;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-    z-index: 999;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 15px;
+    
 }
 
-.navBar .maxWidth {
+.newNavBar .maxWidth {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-.navBar .menu li {
+
+.newNavBar .menu li {
     display: inline-block;
     list-style: none;
 }
 
-.navBar .logo a{
+.newNavBar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
     
 }
 
-.navBar.sticky{
+// .navBar.sticky{
+//     padding: 15px 0;
+//     // background: #1815b8;
+//     display: block;
+//     // position: fixed;
+// }
+
+// #stickyNav{
+//     padding: 15px 0;
+// }
+
+
+// #stickyNav .logo a span{
+//     color: #fff;
+// }
+
+.newNavBar.sticky{
     padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     background: #1815b8;
+    height: 70px;
 }
 
-.navBar .logo a span {
+
+.newNavBar .logo a span{
     color: #FDB827;
     transition: all 0.3s ease;
 }
 
-.navBar.sticky .logo a span{
-    color: #fff;
-}
-.navBar .menu li a{
+.newNavBar .menu li a{
     display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     margin-left: 25px;
     transition: color 0.2s ease;
 }
 
-.navBar .menu li a:hover{
-    color: #011817;
+.newNavBar .menu li a:hover {
+    // color: #011817;
+    background: #FDB827;
+    color: #1815b8;
+    padding: 5px 2px;
+    border-radius: 5px;
 }
 
 
@@ -90,7 +110,13 @@ html {
     color: #fff;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
 
+}
+
+.newNavBar {
+    position: absolute;
+    bottom: 0;
 }
 .home .maxWidth {
     margin: auto 20px auto 50px;
@@ -793,7 +819,6 @@ html {
     bottom: 0;
     left: 50%; 
     transform: translateX(-50%);
-    // content: "get in touch";
 }
 
 .contact-content {
@@ -931,7 +956,12 @@ footer span a:hover{
     border-radius: 55px;
 }
   // TODO: responsiveness of my web
-  
+
+  @media(max-width: 420px){
+    .newNavBar .logo a{
+        font-size: 22px;
+    }   
+  }
   
   @media(max-width: 470px){
       .homeContent .nameTxt_2 {
@@ -1092,7 +1122,7 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-     .navBar .menu{
+     .newNavBar .menu{
          position: fixed;
          height: 100vh;
          width: 100%;
@@ -1105,13 +1135,13 @@ footer span a:hover{
          z-index: 999;
         }
 
-    .navBar .menu.active{
+    .newNavBar .menu.active{
         left: 0;
     }
-    .navBar .menu li{
+    .newNavBar .menu li{
             display: block;
         }
-    .navBar .menu li a{            
+    .newNavBar .menu li a{            
          display: inline-block;
          margin: 15px;
          font-size: 20px;
