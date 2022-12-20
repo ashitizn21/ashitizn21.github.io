@@ -39,14 +39,14 @@ $(document).ready(function(){
     });
    
     var typed = new Typed(".typing", {
-        strings: ["Web Developer", "Competitive Programmer", "App Developer"],
+        strings: ["Python Developer", "Web Developer", "Competitive Programmer", "App Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing_2", {
-        strings: ["Web Developer", "Competitive Programmer", "App Developer"],
+        strings: ["Python Developer", "Web Developer", "Competitive Programmer", "App Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
